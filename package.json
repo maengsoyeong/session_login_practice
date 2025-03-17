@@ -1,7 +1,7 @@
 {
   "name": "session",
   "version": "1.0.0",
-  "description": "",
+  "description": "1. 쿠키와 세션이 무엇인지, 각각의 역할과 사용 목적을 이해한다. 2. 쿠키와 세션의 주요 차이점을 이해하고, 각각이 어떤 상황에서 사용되는지 설명할 수 있다. 3. 쿠키와 세션을 사용하여 로그인 상태 유지, 사용자 정보 저장 등의 기능을 구현할 수 있다. 4. HTTP 요청과 응답 과정에서 쿠키와 세션이 어떻게 주고받아지는지 이해한다.",
   "main": "login.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,9 +11,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cookie-parser": "^1.4.6",
+    "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
-    "express": "^4.19.2",
+    "express": "^4.21.2",
     "express-session": "^1.18.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maengsoyeong/session_login_practice.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/maengsoyeong/session_login_practice/issues"
+  },
+  "homepage": "https://github.com/maengsoyeong/session_login_practice#readme"
 }

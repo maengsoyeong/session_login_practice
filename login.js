@@ -19,7 +19,8 @@ function login() {
   const userId = idInput.value;
   const userPassword = passwordInput.value;
 
-  return axios.post("http://localhost:3000", { userId, userPassword });
+  return axios.post("http://localhost:3000", { 
+    userId, userPassword });
 }
 
 // 로그아웃 함수
