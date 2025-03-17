@@ -53,19 +53,16 @@ app.use(
     resave: false, // 🔹 변경 없으면 저장 안 함
     saveUninitialized: false, // 🔹 빈 세션 저장 안 함
     name: "session_id", // 🔹 쿠키 이름 설정
-    cookie: { secure: false, httpOnly: true }, 
-    // 🔹 secure: HTTPS에서만 사용, 개발 환경에서는 false
   })
 );
 
 // POST 요청 (로그인 요청시 보내는 메소드)
 app.post("/", (req, res) => {
   const { user_id, user_password } = req.body;
-
+  console.log("Received login data:", req.body);
   // 3️⃣. (find 메서드를 사용하여) users의 정보와 사용자가 입력한 정보를 비교하여 일치하는 회원이 존재하는지 확인하는 로직을 작성하세요.
   const userInfo = users.find(
-    (user) => user.user_id === user_id && 
-    user.user_password === user_password
+    (user) => user.user_id === user_id && user.user_password === user_password
   );
 
   if (!userInfo) {
